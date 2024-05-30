@@ -1,4 +1,6 @@
 let images = document.querySelectorAll(".img")
+let i = 1;
+window.onload = images[0].classList.add("active");
 
 images.forEach(image => {
     image.addEventListener("click", () => {
