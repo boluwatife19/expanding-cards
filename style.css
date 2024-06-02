@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     margin-top: 50px;
     background: rgb(71, 60, 1);
     width: 100%;
+    flex-direction: column;
 }
 
 main{
@@ -58,6 +60,37 @@ div h2 {
 
 .active h2 {
     opacity: 1;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 60px;
+}
+
+footer span img{
+    width: 200px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer ul a{
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    transition: .3s ease-in-out;
+    font-weight: 700;
+}
+
+footer ul a:hover{
+    color: rgb(188, 188, 188);
 }
 
 @media (max-width: 1000px) {
